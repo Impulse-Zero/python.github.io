@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PythonMaster - Полный курс Python с нуля до PRO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/course.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="python-logo">
+                <div class="python-shape"></div>
+                <div class="python-shape"></div>
+            </div>
+            <p>Загрузка PythonMaster...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">🐍</div>
+                <span class="logo-text">PythonMaster</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="courses/basics/index.html" class="nav-link">Курс</a></li>
+                <li><a href="practice/exercises.html" class="nav-link">Практика</a></li>
+                <li><a href="practice/playground.html" class="nav-link">Песочница</a></li>
+                <li><a href="#community" class="nav-link">Сообщество</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <div class="user-progress">
+                    <span class="progress-text">Прогресс: <strong>0%</strong></span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-background">
+            <div class="floating-code" id="floatingCode"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-main">Освой Python</span>
+                        <span class="title-sub">с нуля до PRO</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Полный практический курс программирования на Python. 
+                        <span class="highlight">150+ уроков</span>, 
+                        <span class="highlight">50+ проектов</span>, 
+                        <span class="highlight">интерактивная практика</span>.
+                    </p>
+
+                    <div class="hero-features">
+                        <div class="feature">
+                            <span class="feature-icon">⚡</span>
+                            <span>С нуля до джуна за 3 месяца</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🎯</span>
+                            <span>Портфолио из 10+ проектов</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🚀</span>
+                            <span>Трудоустройство</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="courses/basics/index.html" class="btn btn-primary btn-large">
+                            Начать обучение бесплатно
+                        </a>
+                        <a href="#curriculum" class="btn btn-secondary">
+                            Смотреть программу
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-preview">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span class="window-title">python_master.py</span>
+                            </div>
+                            <div class="code-content">
+                                <pre><code class="python">class Student:
+    def __init__(self, name):
+        self.name = name
+        self.level = "Новичок"
+        self.skills = []
+
+    def learn(self, topic):
+        self.skills.append(topic)
+        print(f"🎉 {self.name} освоил {topic}!")
+
+    def become_developer(self):
+        self.level = "Python Developer"
+        return f"🚀 {self.name} готов к работе!"
+
+# Твой путь начинается здесь
+you = Student("Алексей")
+you.learn("Основы Python")
+you.learn("Веб-разработка")
+you.learn("Data Science")
+print(you.become_developer())</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum-section" id="curriculum">
+        <div class="container">
+            <div class="section-header">
+                <h2>Полная программа обучения</h2>
+                <p>8 модулей • 150+ уроков • 50+ практических проектов</p>
+            </div>
+
+            <div class="modules-grid">
+                <!-- Module 1 -->
+                <div class="module-card" data-module="1">
+                    <div class="module-header">
+                        <div class="module-badge">Модуль 1</div>
+                        <h3>Основы Python</h3>
+                        <p>Синтаксис, переменные, типы данных, операции</p>
+                    </div>
+                    <div class="module-content">
+                        <ul class="lessons-list">
+                            <li>✅ Установка и настройка окружения</li>
+                            <li>✅ Синтаксис и структура программы</li>
+                            <li>✅ Переменные и типы данных</li>
+                            <li>✅ Базовые операции и функции</li>
+                            <li>✅ Работа с строками и числами</li>
+                            <li>✅ Ввод и вывод данных</li>
+                        </ul>
+                        <div class="module-stats">
+                            <span>15 уроков</span>
+                            <span>20 заданий</span>
+                            <span>3 проекта</span>
+                        </div>
+                    </div>
+                    <div class="module-footer">
+                        <a href="courses/basics/index.html" class="btn btn-outline">Начать модуль</a>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="module-card" data-module="2">
+                    <div class="module-header">
+                        <div class="module-badge">Модуль 2</div>
+                        <h3>Управление потоком</h3>
+                        <p>Условные операторы, циклы, исключения</p>
+                    </div>
+                    <div class="module-content">
+                        <ul class="lessons-list">
+                            <li>✅ Условные операторы if/elif/else</li>
+                            <li>✅ Циклы for и while</li>
+                            <li>✅ Операторы break, continue, pass</li>
+                            <li>✅ Обработка исключений</li>
+                            <li>✅ Логические операции</li>
+                            <li>✅ Практические задачи</li>
+                        </ul>
+                        <div class="module-stats">
+                            <span>12 уроков</span>
+                            <span>18 заданий</span>
+                            <span>2 проекта</span>
+                        </div>
+                    </div>
+                    <div class="module-footer">
+                        <a href="courses/flow-control/index.html" class="btn btn-outline">Начать модуль</a>
+                    </div>
+                </div>
+
+                <!-- Добавьте остальные 6 модулей аналогично -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Section -->
+    <section class="practice-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Интерактивная практика</h2>
+                <p>Закрепляйте знания на реальных задачах</p>
+            </div>
+
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Онлайн редактор кода</h3>
+                    <p>Пишите и запускайте Python код прямо в браузере. Мгновенный результат, подсветка синтаксиса, автодополнение.</p>
+                    <a href="practice/playground.html" class="btn btn-primary">Открыть редактор</a>
+                </div>
+
+                <div class="practice-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Интерактивные задания</h3>
+                    <p>300+ задач разной сложности с автоматической проверкой. От базовых алгоритмов до сложных проектов.</p>
+                    <a href="practice/exercises.html" class="btn btn-primary">Начать решать</a>
+                </div>
+
+                <div class="practice-card">
+                    <div class="card-icon">🏆</div>
+                    <h3>Челленджи и проекты</h3>
+                    <p>Реальные проекты для портфолио: веб-приложения, анализ данных, автоматизация, игры.</p>
+                    <a href="practice/challenges.html" class="btn btn-primary">Смотреть проекты</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">🐍</div>
+                        <span class="logo-text">PythonMaster</span>
+                    </div>
+                    <p>Образовательная платформа для изучения Python. От новичка до профессионального разработчика.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Курс</h4>
+                    <ul>
+                        <li><a href="courses/basics/index.html">Основы Python</a></li>
+                        <li><a href="courses/functions/index.html">Функции и модули</a></li>
+                        <li><a href="courses/oop/index.html">ООП</a></li>
+                        <li><a href="courses/web-dev/index.html">Веб-разработка</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Практика</h4>
+                    <ul>
+                        <li><a href="practice/playground.html">Онлайн редактор</a></li>
+                        <li><a href="practice/exercises.html">Задачи</a></li>
+                        <li><a href="practice/challenges.html">Проекты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Поддержка</h4>
+                    <ul>
+                        <li><a href="#">Документация</a></li>
+                        <li><a href="#">Сообщество</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 PythonMaster. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/progress-tracker.js"></script>
+</body>
+</html>
